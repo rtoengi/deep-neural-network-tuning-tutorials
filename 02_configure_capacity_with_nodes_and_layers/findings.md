@@ -7,6 +7,4 @@ to be somewhere between 6 and 16. With more than 16 nodes the performance of the
 too complex for the training dataset. Interestingly, the models with 30, 34 and even 50 nodes perform well which is due
 to the stochastic nature of the learning algorithm.
 
-![final loss](ext_too_many_nodes_loss.png "final loss")
-
-![test accuracy](ext_too_many_nodes_accuracy.png "test accuracy")
+<img src="ext_too_many_nodes_loss.png" width="420"> <img src="ext_too_many_nodes_accuracy.png" width="420">
