@@ -14,4 +14,4 @@ to the stochastic nature of the learning algorithm.
 A model with up to 3 hidden layers can learn the problem perfectly. However, using more hidden layers causes the model
 to decrease in performance as is illustrated by the training error and test accuracy plots below.
 
-<img src="images/ext_too_many_hidden_layers_loss.png" width="420"> <img src="images/ext_too_many_layers_accuracy.png" width="420">
+<img src="images/ext_too_many_hidden_layers_loss.png" width="420"> <img src="images/ext_too_many_hidden_layers_accuracy.png" width="420">
