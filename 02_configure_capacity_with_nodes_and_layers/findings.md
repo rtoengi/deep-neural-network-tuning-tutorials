@@ -7,11 +7,11 @@ to be somewhere between 6 and 16. With more than 16 nodes the performance of the
 too complex for the training dataset. Interestingly, the models with 30, 34 and even 50 nodes perform well which is due
 to the stochastic nature of the learning algorithm.
 
-<img src="ext_too_many_nodes_loss.png" width="420"> <img src="ext_too_many_nodes_accuracy.png" width="420">
+<img src="images/ext_too_many_nodes_loss.png" width="420"> <img src="images/ext_too_many_nodes_accuracy.png" width="420">
 
 ### Too many hidden layers
 
 A model with up to 3 hidden layers can learn the problem perfectly. However, using more hidden layers causes the model
 to decrease in performance as is illustrated by the training error and test accuracy plots below.
 
-<img src="ext_harder_problem_loss_initial_problem.png" width="420"> <img src="ext_harder_problem_accuracy_initial_problem.png" width="420">
+<img src="images/ext_too_many_hidden_layers_loss.png" width="420"> <img src="images/ext_too_many_layers_accuracy" width="420">
