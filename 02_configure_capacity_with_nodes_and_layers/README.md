@@ -21,7 +21,6 @@ to decrease in performance as is illustrated by the training error and test accu
 Increasing the size of the dataset fivefold and using a 70/30 train/test split results in a model with 4 hidden layers
 being able to learn the problem perfectly as opposed to the simpler problem where a model with at most 3 hidden layers
 was able to perform well. Models with 5 hidden layers or more did perform consistently poorly. I suppose such deep
-networks require additional measures such as addressing the problem of vanishing gradients in order to perform
-well.
+networks require additional measures such as addressing the problem of vanishing gradients in order to perform well.
 
 <img src="images/ext_harder_problem_loss.png" width="420"> <img src="images/ext_harder_problem_accuracy.png" width="420">
