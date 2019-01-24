@@ -18,7 +18,7 @@ model = Sequential()
 model.add(Dense(50, input_dim=2, activation='relu', kernel_initializer='he_uniform'))
 model.add(Dense(3, activation='softmax'))
 # compile model
-opt = SGD(lr=0.001, momentum=0.9)
+opt = SGD(lr=0.01, momentum=0.9)
 model.compile(loss='categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
 # fit model
 history = model.fit(trainX, trainy, validation_data=(testX, testy), epochs=200, verbose=0, batch_size=1)
