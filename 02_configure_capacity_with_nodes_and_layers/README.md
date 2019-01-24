@@ -2,7 +2,7 @@
 
 ### Problem description
 
-A multiclass classification problem is used to demonstrate the effect of model capacity on model performance. Concretely,
+A multiclass classification problem is used to demonstrate the effect of model capacity on model performance. Specifically,
 the problem consists of 20 classes, 100 input features and a dataset size of 1000, which is contrived using the
 scikit-learn `make_blobs()` function. The kind of problem is illustrated by the following simplified version with only 3
 classes and only 2 input features.
