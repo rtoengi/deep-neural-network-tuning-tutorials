@@ -1,5 +1,5 @@
 # mlp for regression with mae loss function
-from util import disable_tensorflow_gpu
+from utils import disable_tensorflow_gpu
 from sklearn.datasets import make_regression
 from sklearn.preprocessing import StandardScaler
 from keras.models import Sequential
