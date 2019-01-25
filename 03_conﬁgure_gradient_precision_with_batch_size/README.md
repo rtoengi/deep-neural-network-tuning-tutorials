@@ -20,3 +20,16 @@ rate of 0.001 seems to be a good choice for this specific problem and model conf
 converges fast with relatively little variance in the classification accuracy.
 
 ![](images/ext_vary_learning_rate_accuracies.png)
+
+### Varying the number of epochs with minibatch gradient descent
+
+The learning curves below show the number of epochs required for the learning process to converge for the different batch
+sizes. As assumed, learning processes with smaller batch sizes require fewer epochs whereas learning processes with
+larger batch sizes have to be trained for longer. This is because the greater the batch size, the less often the model's
+weights are updated. To determine the point when a model has converged early stopping is applied, i.e. learning is
+stopped after a given number of epochs with no improvement. For the 4 smallest batch sizes this number is 10 while 20 for
+the 4 largest batch sizes. In conclusion, the number of epochs required for a converged model ranges from about 25 up to
+over 600. As all eight training processes result in comparable performances, a batch size of 32 or even smaller seems to
+be appropriate for this specific problem.
+
+![](images/ext_vary_epochs_loss.png)
