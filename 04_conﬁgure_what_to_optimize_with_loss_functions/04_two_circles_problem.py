@@ -1,4 +1,5 @@
 # scatter plot of the circles dataset with points colored by class
+from util import disable_tensorflow_gpu
 from sklearn.datasets import make_circles
 from numpy import where
 from matplotlib import pyplot

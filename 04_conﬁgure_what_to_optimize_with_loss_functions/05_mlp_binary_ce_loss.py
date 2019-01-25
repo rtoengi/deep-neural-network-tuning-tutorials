@@ -1,4 +1,5 @@
 # mlp for the circles problem with cross-entropy loss
+from util import disable_tensorflow_gpu
 from sklearn.datasets import make_circles
 from keras.models import Sequential
 from keras.layers import Dense

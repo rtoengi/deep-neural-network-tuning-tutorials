@@ -1,4 +1,5 @@
 # scatter plot of blobs dataset
+from util import disable_tensorflow_gpu
 from sklearn.datasets.samples_generator import make_blobs
 from numpy import where
 from matplotlib import pyplot
