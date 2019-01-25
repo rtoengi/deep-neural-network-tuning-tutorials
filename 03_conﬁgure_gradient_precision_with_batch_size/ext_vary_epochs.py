@@ -1,4 +1,4 @@
-import disable_tensorflow_gpu
+from util import disable_tensorflow_gpu
 from keras.layers import Dense
 from keras.models import Sequential
 from keras.optimizers import SGD
