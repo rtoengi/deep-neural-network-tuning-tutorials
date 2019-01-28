@@ -25,3 +25,6 @@ on new data.
 
 ### Configure Gradient Precision with Batch Size
 [Go to code samples and discussion of the extensions](03_conﬁgure_gradient_precision_with_batch_size)
+
+### Configure What to Optimize with Loss Functions
+[Go to code samples and discussion of the extensions](04_conﬁgure_what_to_optimize_with_loss_functions)
