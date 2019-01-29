@@ -1,4 +1,4 @@
-A collection of simple python scripts examining the numerous hyperparameters of deep neural network. The tutorials are
+A collection of simple python scripts examining the numerous hyperparameters of deep neural networks. The tutorials are
 self-contained exploring one aspect at a time of how to tune deep neural networks to get better learning, generalization
 and prediction performance.
 
