@@ -42,5 +42,5 @@ table, the metrics for the different loss functions are very close to each other
 | Loss function                    | Train loss | Train accuracy | Test loss | Test accuracy |
 |----------------------------------|-----------:|---------------:|----------:|--------------:|
 | Categorical cross-entropy        | 0.403      | 0.826          | 0.433     | 0.820         |
-| sparse categorical cross-entropy | 0.399      | 0.827          | 0.428     | 0.822         |
+| Sparse categorical cross-entropy | 0.399      | 0.827          | 0.428     | 0.822         |
 | KL divergence                    | 0.401      | 0.826          | 0.433     | 0.820         |
