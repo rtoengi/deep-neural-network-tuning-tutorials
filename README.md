@@ -28,3 +28,6 @@ on new data.
 
 ### Configure What to Optimize with Loss Functions
 [Go to code samples and discussion of the extensions](04_conﬁgure_what_to_optimize_with_loss_functions)
+
+### Configure Speed of Learning with Learning Rate
+[Go to code samples and discussion of the extensions](05_configure_speed_of_learning_with_learning_rate)
