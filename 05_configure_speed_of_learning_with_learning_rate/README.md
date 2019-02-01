@@ -15,5 +15,6 @@ plotted in blue, whereas test accuracy is shown in orange. Adam is used as the o
 largest learning rates of 0.1 and 0.01 the problem is learnt fast but exhibits some volatility in accuracy throughout.
 Modest chosen values of 0.001 and 0.0001 show less variation in accuracy, although with the latter not having converged
 yet needing longer training. Finally, the two smallest values, 1e-5 and 1e-6, result in unstable not converged models.
+In conclusion, it's better to choose a learning rate that is initially too large than too small.
 
 ![](images/ext_vary_initial_lrate.png)
