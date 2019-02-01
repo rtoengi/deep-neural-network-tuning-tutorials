@@ -1,4 +1,5 @@
 # study of sgd with adaptive learning rates in the blobs problem
+from utils import disable_tensorflow_gpu
 from sklearn.datasets.samples_generator import make_blobs
 from keras.models import Sequential
 from keras.layers import Dense

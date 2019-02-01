@@ -1,4 +1,5 @@
 # study of patience for the learning rate drop schedule on the blobs problem
+from utils import disable_tensorflow_gpu
 from sklearn.datasets.samples_generator import make_blobs
 from keras.layers import Dense
 from keras.models import Sequential

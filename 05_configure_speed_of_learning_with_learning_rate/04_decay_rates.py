@@ -1,4 +1,5 @@
 # demonstrate the effect of decay on the learning rate
+from utils import disable_tensorflow_gpu
 from matplotlib import pyplot
 
 # learning rate decay
