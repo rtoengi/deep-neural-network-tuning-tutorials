@@ -18,13 +18,13 @@ generalization of models on new data.
 **Better Predictions**. Discover the techniques to improve the performance of final models when used to make predictions
 on new data.
 
-### Better Learning
+## Better Learning
 
-#### Configure Capacity with Nodes and Layers
+### Configure Capacity with Nodes and Layers
 [Go to code samples and discussion of the extensions](02_configure_capacity_with_nodes_and_layers)
 
-#### Configure Gradient Precision with Batch Size
+### Configure Gradient Precision with Batch Size
 [Go to code samples and discussion of the extensions](03_conﬁgure_gradient_precision_with_batch_size)
 
-#### Configure What to Optimize with Loss Functions
+### Configure What to Optimize with Loss Functions
 [Go to code samples and discussion of the extensions](04_conﬁgure_what_to_optimize_with_loss_functions)
