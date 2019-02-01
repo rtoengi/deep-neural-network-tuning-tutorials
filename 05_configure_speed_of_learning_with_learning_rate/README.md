@@ -6,7 +6,7 @@ A multiclass classification problem is used to demonstrate the effect of the lea
 Specifically, the problem consists of 3 classes, 2 input features and a dataset size of 1000, which is contrived using
 the scikit-learn `make_blobs()` function.
 
-<img src="images/problem" width="420">
+<img src="images/problem.png" width="420">
 
 ### Varying the initial learning rate with an adaptive learning rate optimization algorithm
 
