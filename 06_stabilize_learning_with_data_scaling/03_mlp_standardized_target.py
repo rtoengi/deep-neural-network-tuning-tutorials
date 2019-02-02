@@ -1,4 +1,5 @@
 # mlp with scaled outputs on the regression problem
+from utils import disable_tensorflow_gpu
 from sklearn.datasets import make_regression
 from sklearn.preprocessing import StandardScaler
 from keras.layers import Dense

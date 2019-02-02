@@ -1,4 +1,5 @@
 # mlp with unscaled data for the regression problem
+from utils import disable_tensorflow_gpu
 from sklearn.datasets import make_regression
 from keras.layers import Dense
 from keras.models import Sequential

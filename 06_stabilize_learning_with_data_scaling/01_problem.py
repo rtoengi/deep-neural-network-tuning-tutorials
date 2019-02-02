@@ -1,4 +1,5 @@
 # regression predictive modeling problem
+from utils import disable_tensorflow_gpu
 from sklearn.datasets import make_regression
 from matplotlib import pyplot
 # generate regression dataset
