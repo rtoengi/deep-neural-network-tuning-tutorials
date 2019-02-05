@@ -31,3 +31,6 @@ on new data.
 
 ### Configure Speed of Learning with Learning Rate
 [Go to code samples and discussion of the extensions](05_configure_speed_of_learning_with_learning_rate)
+
+### Stabilize Learning with Data Scaling
+[Go to code samples and discussion of the extensions](06_stabilize_learning_with_data_scaling)
