@@ -34,3 +34,6 @@ on new data.
 
 ### Stabilize Learning with Data Scaling
 [Go to code samples and discussion of the extensions](06_stabilize_learning_with_data_scaling)
+
+### Fix Vanishing Gradients with ReLU
+[Go to code samples and discussion of the extensions](07_fix_vanishing_gradients_with_relu)
