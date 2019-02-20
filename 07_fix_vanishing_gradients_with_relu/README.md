@@ -11,9 +11,9 @@ gradients is contrived by means of the scikit-learn `make_circles()` function. S
 ### Using Xavier initialization
 
 Using a deep MLP with tanh as its activation function for the hidden layers and initializing the weights randomly and
-uniformly from the range [0, 1] resulted in very poor performance with the model not able to learn the problem. However,
-initializing the weights using the Xavier uniform method with the network configuration otherwise unchanged resulted in
-rather good accuracy performance of `train: 0.814, test: 0.840`. This confirms the known fact that a suitable
+uniformly from the range [0, 1] resulted in very poor performance with the model not being able to learn the problem.
+However, initializing the weights using the Xavier uniform method with the network configuration otherwise unchanged
+resulted in rather good accuracy performance of `train: 0.814, test: 0.840`. This confirms the known fact that a suitable
 combination of the weight's initialization method and the applied activation function for a given hidden layer is
 crucial. The following learning curves also show that the problem has been learnt as soon as after about 100 epochs.
 
