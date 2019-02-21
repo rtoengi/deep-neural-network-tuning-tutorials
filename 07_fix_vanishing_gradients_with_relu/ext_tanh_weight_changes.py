@@ -64,10 +64,12 @@ print('Train: %.3f, Test: %.3f' % (train_acc, test_acc))
 # pyplot.legend()
 # pyplot.show()
 
-pyplot.plot(weights_monitor.weight_norms[0][0], 'b', label='layer 1')
-pyplot.plot(weights_monitor.weight_norms[0][1], 'b')
-pyplot.plot(weights_monitor.weight_norms[0][2], 'b')
-pyplot.plot(weights_monitor.weight_norms[0][3], 'b')
-pyplot.plot(weights_monitor.weight_norms[0][4], 'b')
-pyplot.legend()
+for l in range(len(weights_monitor.weight_norms)):
+    pyplot.subplot(320 + (l + 1))
+    for w in range(len(weights_monitor.weight_norms[l])):
+        pyplot.plot(weights_monitor.weight_norms[l][w], label='node ' + str(w + 1))
+    pyplot.title('layer ' + str(l + 1))
+    # pyplot.legend(loc='upper left', bbox_to_anchor=(1, 0))
+    pyplot.legend(loc='upper left', fontsize='xx-small')
+
 pyplot.show()
