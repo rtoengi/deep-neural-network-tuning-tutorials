@@ -42,34 +42,16 @@ model.add(Dense(5, activation='tanh', kernel_initializer=init))
 model.add(Dense(1, activation='sigmoid', kernel_initializer=init))
 
 opt = SGD(lr=0.01, momentum=0.9)
-model.compile(loss='binary_crossentropy', optimizer=opt, metrics=['accuracy'])
+model.compile(loss='binary_crossentropy', optimizer=opt)
 
 weights_monitor = WeightsMonitor()
-history = model.fit(trainX, trainy, validation_data=(testX, testy), epochs=500, callbacks=[weights_monitor], verbose=0)
-
-_, train_acc = model.evaluate(trainX, trainy, verbose=0)
-_, test_acc = model.evaluate(testX, testy, verbose=0)
-print('Train: %.3f, Test: %.3f' % (train_acc, test_acc))
-
-# pyplot.subplot(211)
-# pyplot.title('Cross-Entropy Loss', pad=-40)
-# pyplot.plot(history.history['loss'], label='train')
-# pyplot.plot(history.history['val_loss'], label='test')
-# pyplot.legend()
-#
-# pyplot.subplot(212)
-# pyplot.title('Accuracy', pad=-40)
-# pyplot.plot(history.history['acc'], label='train')
-# pyplot.plot(history.history['val_acc'], label='test')
-# pyplot.legend()
-# pyplot.show()
+model.fit(trainX, trainy, epochs=500, callbacks=[weights_monitor], verbose=0)
 
 for l in range(len(weights_monitor.weight_norms)):
     pyplot.subplot(320 + (l + 1))
     for w in range(len(weights_monitor.weight_norms[l])):
         pyplot.plot(weights_monitor.weight_norms[l][w], label='node ' + str(w + 1))
     pyplot.title('layer ' + str(l + 1))
-    # pyplot.legend(loc='upper left', bbox_to_anchor=(1, 0))
     pyplot.legend(loc='upper left', fontsize='xx-small')
 
 pyplot.show()
