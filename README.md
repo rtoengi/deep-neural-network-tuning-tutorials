@@ -37,3 +37,6 @@ on new data.
 
 ### Fix Vanishing Gradients with ReLU
 [Go to code samples and discussion of the extensions](07_fix_vanishing_gradients_with_relu)
+
+### Fix Exploding Gradients with Gradient Clipping
+[Go to code samples and discussion of the extensions](08_fix_exploding_gradients_with_gradient_clipping)
