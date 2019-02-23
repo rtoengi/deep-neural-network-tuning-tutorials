@@ -29,3 +29,19 @@ to a great extent. The following learning curves illustrate that initially the t
 continuously but more slowly from then on. Perhaps, the learning process has been stopped too early.
 
 ![](images/ext_learning_algorithm.png)
+
+### Evaluating weight changes
+
+In order to observe the issue of vanishing gradients the updates to the model weights can be evaluated. The following
+two figures plot the L1 norm of the model weights for each node in a layer against the number of epochs.
+
+The plot below shows the weight norms of a network with 8 layers using the tanh activation function for its nodes. It
+can be observed that there is a vanishing gradients problem as the weights hardly change except for the output layer.
+
+![](images/ext_tanh_weight_changes.png)
+
+A model with the same structure except for applying relu as the activation function doesn't suffer from vanishing
+gradients. This is illustrated by the plot below from which can be seen that the model weights are updated back through
+the first layer.
+
+![](images/ext_relu_weight_changes.png)
