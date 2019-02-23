@@ -39,6 +39,8 @@ model.add(Dense(5, activation='tanh', kernel_initializer=init))
 model.add(Dense(5, activation='tanh', kernel_initializer=init))
 model.add(Dense(5, activation='tanh', kernel_initializer=init))
 model.add(Dense(5, activation='tanh', kernel_initializer=init))
+model.add(Dense(5, activation='tanh', kernel_initializer=init))
+model.add(Dense(5, activation='tanh', kernel_initializer=init))
 model.add(Dense(1, activation='sigmoid', kernel_initializer=init))
 
 opt = SGD(lr=0.01, momentum=0.9)
@@ -47,8 +49,9 @@ model.compile(loss='binary_crossentropy', optimizer=opt)
 weights_monitor = WeightsMonitor()
 model.fit(trainX, trainy, epochs=500, callbacks=[weights_monitor], verbose=0)
 
+pyplot.figure(figsize=(6.4, 6.4))
 for l in range(len(weights_monitor.weight_norms)):
-    pyplot.subplot(320 + (l + 1))
+    pyplot.subplot(420 + (l + 1))
     for w in range(len(weights_monitor.weight_norms[l])):
         pyplot.plot(weights_monitor.weight_norms[l][w], label='node ' + str(w + 1))
     pyplot.title('layer ' + str(l + 1))
