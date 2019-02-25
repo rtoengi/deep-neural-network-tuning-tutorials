@@ -14,11 +14,11 @@ def prepare_data():
     return trainX, trainy, testX, testy
 
 
-def fit_model(trainX, trainy, testX, testy, norm):
+def fit_model(trainX, trainy, testX, testy, clip_norm):
     model = Sequential()
     model.add(Dense(25, input_dim=20, activation='relu', kernel_initializer='he_uniform'))
     model.add(Dense(1, activation='linear'))
-    opt = SGD(lr=0.01, momentum=0.9, clipnorm=norm)
+    opt = SGD(lr=0.01, momentum=0.9, clipnorm=clip_norm)
     model.compile(loss='mean_squared_error', optimizer=opt)
     history = model.fit(trainX, trainy, validation_data=(testX, testy), epochs=100, verbose=0)
     train_mse = model.evaluate(trainX, trainy, verbose=0)
@@ -26,13 +26,13 @@ def fit_model(trainX, trainy, testX, testy, norm):
     print('Train: %.3f, Test: %.3f' % (train_mse, test_mse))
     pyplot.plot(history.history['loss'])
     pyplot.plot(history.history['val_loss'])
-    pyplot.title('norm='+str(norm), pad=-20)
+    pyplot.title('norm='+str(clip_norm), pad=-20)
 
 
 trainX, trainy, testX, testy = prepare_data()
-norms = [1.0, 2.0, 4.0, 8.0, 16.0, 32.0]
-for i in range(len(norms)):
+clip_norms = [1.0, 2.0, 4.0, 8.0, 16.0, 32.0]
+for i in range(len(clip_norms)):
     pyplot.subplot(3, 2, i + 1)
-    fit_model(trainX, trainy, testX, testy, norms[i])
+    fit_model(trainX, trainy, testX, testy, clip_norms[i])
 
 pyplot.show()
