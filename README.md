@@ -40,3 +40,6 @@ on new data.
 
 ### Fix Exploding Gradients with Gradient Clipping
 [Go to code samples and discussion of the extensions](08_fix_exploding_gradients_with_gradient_clipping)
+
+### Accelerate Learning with Batch Normalization
+[Go to code samples and discussion of the extensions](09_accelerate_learning_with_batch_normalization)
