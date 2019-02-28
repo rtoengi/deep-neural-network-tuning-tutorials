@@ -43,3 +43,6 @@ on new data.
 
 ### Accelerate Learning with Batch Normalization
 [Go to code samples and discussion of the extensions](09_accelerate_learning_with_batch_normalization)
+
+### Deeper Models with Greedy Layer-Wise Pretraining
+[Go to code samples and discussion of the extensions](10_deeper_models_with_greedy_layer_wise_pretraining)
