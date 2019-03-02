@@ -27,3 +27,34 @@ acceptable as the main first goal with a training process in general is to achie
 and when having achieved that one can tackle the problem of overfitting.
 
 ![](images/ext_mlp_supervised_pretrain_and_fine_tune.png)
+
+
+### Fine-tuning the unsupervised pre-trained model prior fitting a classifier
+
+The model has been fine-tuned in an unsupervised fashion prior fitting a classifier output layer. The fine-tuning
+learning phase uses a smaller learning rate of 0.001 and a larger number of epochs of 500 as compared to the pre-
+training phase using a learning rate of 0.01 and 100 epochs. The following table shows the mean squared errors of the
+train and test sets for the different number of layers used. As can be seen both the train and test MSEs remain close to
+zero for all model configurations. Without fine-tuning the MSEs had been steadily increasing as layers have been added.
+
+| # Layers | Train MSE | Test MSE |
+|---------:|----------:|---------:|
+| 2        | 0.001     | 0.001    |
+| 3        | 0.001     | 0.002    |
+| 4        | 0.002     | 0.004    |
+| 5        | 0.002     | 0.004    |
+| 6        | 0.002     | 0.004    |
+| 7        | 0.000     | 0.003    |
+
+The following table depicts the train and test accuracies for the model having been fine-tuned. Relatively constant
+accuracies have been achieved for both the train and test sets. As just shown by the reconstruction errors above
+applying fine-tuning to the model a nearly perfect autoencoder could be obtained regardless the number of layers.
+
+| # Layers | Train Acc | Test Acc |
+|---------:|----------:|---------:|
+| 2        | 0.842     | 0.834    |
+| 3        | 0.830     | 0.832    |
+| 4        | 0.828     | 0.838    |
+| 5        | 0.824     | 0.826    |
+| 6        | 0.822     | 0.832    |
+| 7        | 0.834     | 0.828    |
