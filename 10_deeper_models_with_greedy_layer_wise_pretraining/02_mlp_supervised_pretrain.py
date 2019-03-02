@@ -74,7 +74,12 @@ for i in range(n_layers):
 	# store scores for plotting
 	scores[len(model.layers)] = (train_acc, test_acc)
 # plot number of added layers vs accuracy
-pyplot.plot(scores.keys(), [scores[k][0] for k in scores.keys()], label='train', marker='.')
-pyplot.plot(scores.keys(), [scores[k][1] for k in scores.keys()], label='test', marker='.')
+trainScores = [scores[k][0] for k in scores.keys()]
+testScores = [scores[k][1] for k in scores.keys()]
+pyplot.plot(scores.keys(), trainScores, label='train', marker='.')
+pyplot.plot(scores.keys(), testScores, label='test', marker='.')
 pyplot.legend()
+pyplot.show()
+
+pyplot.boxplot([trainScores, testScores], labels=['train acc', 'test acc'])
 pyplot.show()
