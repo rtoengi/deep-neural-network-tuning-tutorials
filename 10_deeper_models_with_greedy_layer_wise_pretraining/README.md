@@ -58,3 +58,34 @@ applying fine-tuning to the model a nearly perfect autoencoder could be obtained
 | 5        | 0.824     | 0.826    |
 | 6        | 0.822     | 0.832    |
 | 7        | 0.834     | 0.828    |
+
+### Fine-tuning the unsupervised pre-trained model fitting a classifier
+
+An unsupervised pre-trained model has been fine-tuned fitting a classifier. The fine-tuning learning phase uses a
+smaller learning rate of 0.001 and a larger number of epochs of 500 as compared to the pre-training phase using a
+learning rate of 0.01 and 100 epochs. As can be seen by the following table of the train and test MSEs the learning
+process is stable up to four layers.
+
+| # Layers | Train MSE | Test MSE |
+|---------:|----------:|---------:|
+| 2        | 0.001     | 0.001    |
+| 3        | 0.018     | 0.018    |
+| 4        | 0.166     | 0.181    |
+| 5        | 10.410    | 10.689   |
+| 6        | 10.411    | 10.697   |
+| 7        | 10.408    | 10.673   |
+
+The table of the train and test classification accuracies for the different number of layers mirrors the fact that the
+model diverges as the number of layers exceeds four.
+
+| # Layers | Train Acc | Test Acc |
+|---------:|----------:|---------:|
+| 2        | 0.830     | 0.830    |
+| 3        | 0.828     | 0.830    |
+| 4        | 0.838     | 0.826    |
+| 5        | 0.342     | 0.326    |
+| 6        | 0.342     | 0.326    |
+| 7        | 0.342     | 0.326    |
+
+For this particular problem and the unsupervised pre-trained model fine-tuning all the weights of the model seems to
+work better when carried out prior fitting a classifier. 
