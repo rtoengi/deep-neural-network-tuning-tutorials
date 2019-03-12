@@ -57,3 +57,5 @@ trainX, trainy, testX, testy = samples_for_seed(2)
 model, history = fit_model(trainX, trainy, testX, testy)
 # evaluate model behavior
 summarize_model(model, history, trainX, trainy, testX, testy)
+# save model to file
+model.save('model_p2.h5')
