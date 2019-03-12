@@ -46,3 +46,6 @@ on new data.
 
 ### Deeper Models with Greedy Layer-Wise Pretraining
 [Go to code samples and discussion of the extensions](10_deeper_models_with_greedy_layer_wise_pretraining)
+
+### Jump-Start Training with Transfer Learning
+[Go to code samples and discussion of the extensions](11_jump_start_training_with_transfer_learning)
