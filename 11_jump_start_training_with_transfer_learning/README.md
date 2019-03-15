@@ -18,3 +18,15 @@ used as a weight initialization scheme) perform best, both having a median accur
 although the transfer learning model showing less variation.
 
 ![](images/ext_reverse_experiment.png)
+
+### Evaluating transfer learning model on problem 2 with additional hidden layer
+
+A standalone model trained on problem 2 serves as a baseline and achieves test accuracy performance of 0.822 with a
+standard deviation of 0.013 on average when trained 30 times. Transfer learning has been conducted by loading a model
+trained on problem 1 keeping its two hidden layers fixed and adding a third hidden layer and output layer with their
+weights initialized randomly. Running this experiment also 30 times the transfer learning model achieves on average a
+test accuracy performance of 0.773 with a standard deviation of 0.128. The performance of the transfer learning model
+is slightly worse than that of the standalone model. This can also be seen by the following box and whisker plots. The
+plot of the transfer learning model exhibits some outliers meaning that it may perform pretty badly.
+
+![](images/ext_additional_hidden_layer.png)

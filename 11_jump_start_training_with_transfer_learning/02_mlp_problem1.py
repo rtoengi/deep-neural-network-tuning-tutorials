@@ -58,4 +58,4 @@ model, history = fit_model(trainX, trainy, testX, testy)
 # evaluate model behavior
 summarize_model(model, history, trainX, trainy, testX, testy)
 # save model to file
-model.save('model.h5')
+model.save('model_p1.h5')
