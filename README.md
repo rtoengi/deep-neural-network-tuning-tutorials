@@ -49,3 +49,8 @@ on new data.
 
 ### Jump-Start Training with Transfer Learning
 [Go to code samples and discussion of the extensions](11_jump_start_training_with_transfer_learning)
+
+## Better Generalization
+
+### Penalize Large Weights with Weight Regularization
+[Go to code samples and discussion of the extensions](13_penalize_large_weights_with_weight_regularization)
