@@ -7,3 +7,9 @@ model. Specifically, the problem has 2 input features and a dataset size of 100 
 using the scikit-learn `make_moons()` function.
 
 <img src="images/problem.png" width="420">
+
+### Reporting weight norms
+
+In order to show that weight regularization indeed decreases the magnitudes of the weights the L2 norm (Euclidean length)
+of the hidden layer's weights is measured. Without regularization the L2 norm of the hidden layer's weights is `11.969`
+as compared to `3.243` when using L2 regularization with lambda set to 0.001.
