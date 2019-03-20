@@ -13,3 +13,9 @@ using the scikit-learn `make_moons()` function.
 In order to show that weight regularization indeed decreases the magnitudes of the weights the L2 norm (Euclidean length)
 of the hidden layer's weights is measured. Without regularization the L2 norm of the hidden layer's weights is `11.969`
 as compared to `3.243` when using L2 regularization with lambda set to 0.001.
+
+### Regularizing output layer
+The model having regularization applied only to its hidden layer serves as a baseline and exhibits accuracy performance
+of `train: 1.000, test: 0.943`. Compared to this is a model having regularized also its output layer with the same value
+for lambda of 0.001. This model configuration has accuracy performance of `train: 1.000, test: 0.929`. Test performance
+is slightly worse as when not regularizing the output layer. 
