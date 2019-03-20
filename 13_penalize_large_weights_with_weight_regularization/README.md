@@ -19,3 +19,11 @@ The model having regularization applied only to its hidden layer serves as a bas
 of `train: 1.000, test: 0.943`. Compared to this is a model having regularized also its output layer with the same value
 for lambda of 0.001. This model configuration has accuracy performance of `train: 1.000, test: 0.929`. Test performance
 is slightly worse as when not regularizing the output layer. 
+
+### Conducting fine-grained grid search
+Conducting a fine-grained grid search between the most promising lambda parameter values of 0.01 and 0.001 has not
+resulted in a better performing model. The following plot of train and test performances against the different values
+for the lambda parameter values shows that in particular the test accuracy performance remains constant slightly above
+0.94.
+
+![](images/ext_fine_grained_grid_search.png)
