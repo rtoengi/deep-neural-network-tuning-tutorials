@@ -54,3 +54,6 @@ on new data.
 
 ### Penalize Large Weights with Weight Regularization
 [Go to code samples and discussion of the extensions](13_penalize_large_weights_with_weight_regularization)
+
+### Sparse Representations with Activity Regularization
+[Go to code samples and discussion of the extensions](14_sparse_representations_with_activity_regularization)
