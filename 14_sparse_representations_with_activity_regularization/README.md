@@ -19,3 +19,10 @@ approximately half of them. Interestingly, the proportion of exactly zero activa
 as `0.463`, just about 4% less than when activity regularization is applied. This indicates that the ReLU activation
 function encourages sparsity in the hidden layer to a great extent on its own. In combination with ReLU as the activation
 function activity regularization additionally forces the magnitudes of the activations to become much smaller.
+
+### Applying activity regularization with L2-norm
+With the same model and activity regularization applied to its hidden layer as in the previous section, but using the
+L2-norm for calculating the penalty instead of the L1-norm, the mean activation value is about `0.069` (as compared to
+`0.019` when using L1-norm) and the proportion of exactly zero activations is roughly `0.405` (as compared to `0.506`
+when using L1-norm). These results are consistent with the characteristics of L2-norm, which spreads the penalty more
+evenly across the different activations with about 10% fewer zero activations and a bit bigger mean activation value.
