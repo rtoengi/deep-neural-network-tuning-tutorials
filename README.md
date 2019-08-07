@@ -57,3 +57,6 @@ on new data.
 
 ### Sparse Representations with Activity Regularization
 [Go to code samples and discussion of the extensions](14_sparse_representations_with_activity_regularization)
+
+### Force Small Weights with Weight Constraints
+[Go to code samples and discussion of the extensions](15_force_small_weights_with_weight_constraints)
