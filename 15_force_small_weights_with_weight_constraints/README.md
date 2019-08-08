@@ -7,3 +7,10 @@ model. Specifically, the problem has 2 input features and a dataset size of 100 
 using the scikit-learn `make_moons()` function.
 
 <img src="images/problem.png" width="420">
+
+### Reporting weight norms
+
+In order to show that weight constraints indeed normalizes the magnitudes of the weights the L2 norm (Euclidean length)
+of the incoming weights to each hidden layer's unit is measured. Without using weight constraints the mean of the L2
+norms is about `0.380` with a maximal value of `2.004`. When applying weight constraints using unit norm each vector of
+incoming weights to a hidden layer's unit has an L2 norm of `1` as expected.
