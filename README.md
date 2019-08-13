@@ -60,3 +60,6 @@ on new data.
 
 ### Force Small Weights with Weight Constraints
 [Go to code samples and discussion of the extensions](15_force_small_weights_with_weight_constraints)
+
+### Decouple Layers with Dropout
+[Go to code samples and discussion of the extensions](16_decouple_layers_with_dropout)
