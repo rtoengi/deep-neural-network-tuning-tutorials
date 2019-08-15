@@ -63,3 +63,6 @@ on new data.
 
 ### Decouple Layers with Dropout
 [Go to code samples and discussion of the extensions](16_decouple_layers_with_dropout)
+
+### Promote Robustness with Noise
+[Go to code samples and discussion of the extensions](17_promote_robustness_with_noise)
