@@ -66,3 +66,6 @@ on new data.
 
 ### Promote Robustness with Noise
 [Go to code samples and discussion of the extensions](17_promote_robustness_with_noise)
+
+### Halt Training at the Right Time with Early Stopping
+[Go to code samples and discussion of the extensions](18_halt_training_at_the_right_time_with_early_stopping)
