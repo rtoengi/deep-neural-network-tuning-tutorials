@@ -69,3 +69,8 @@ on new data.
 
 ### Halt Training at the Right Time with Early Stopping
 [Go to code samples and discussion of the extensions](18_halt_training_at_the_right_time_with_early_stopping)
+
+## Better Predictions
+
+### Combine Models From Multiple Runs with Model Averaging Ensemble
+[Go to code samples and discussion of the extensions](20_combine_models_from_multiple_runs_with_model_averaging_ensemble)
