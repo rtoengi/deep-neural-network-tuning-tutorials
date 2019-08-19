@@ -7,3 +7,7 @@ variance in the model's predictions. Specifically, the problem consists of 3 cla
 size of 500, which is contrived using the scikit-learn `make_blobs()` function.
 
 <img src="images/problem.png" width="420">
+
+### Averaging predicted class labels
+When averaging the predicted class labels instead of the predicted class probabilities the mean is practically the same
+whereas the standard deviation worsens slightly from `0.008` to `0.010`.
