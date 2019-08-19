@@ -74,3 +74,6 @@ on new data.
 
 ### Combine Models From Multiple Runs with Model Averaging Ensemble
 [Go to code samples and discussion of the extensions](20_combine_models_from_multiple_runs_with_model_averaging_ensemble)
+
+### Contribute Proportional to Trust with Weighted Average Ensemble
+[Go to code samples and discussion of the extensions](21_contribute_proportional_to_trust_with_weighted_average_ensemble)
