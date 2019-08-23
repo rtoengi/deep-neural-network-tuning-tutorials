@@ -80,3 +80,6 @@ on new data.
 
 ### Fit Models on Different Samples with Resampling Ensembles
 [Go to code samples and discussion of the extensions](22_fit_models_on_different_samples_with_resampling_ensembles)
+
+### Models from Contiguous Epochs with Horizontal Voting Ensembles
+[Go to code samples and discussion of the extensions](23_models_from_contiguous_epochs_with_horizontal_voting_ensembles)
