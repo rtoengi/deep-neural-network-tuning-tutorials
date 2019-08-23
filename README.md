@@ -77,3 +77,6 @@ on new data.
 
 ### Contribute Proportional to Trust with Weighted Average Ensemble
 [Go to code samples and discussion of the extensions](21_contribute_proportional_to_trust_with_weighted_average_ensemble)
+
+### Fit Models on Different Samples with Resampling Ensembles
+[Go to code samples and discussion of the extensions](22_fit_models_on_different_samples_with_resampling_ensembles)
