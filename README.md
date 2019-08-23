@@ -83,3 +83,6 @@ on new data.
 
 ### Models from Contiguous Epochs with Horizontal Voting Ensembles
 [Go to code samples and discussion of the extensions](23_models_from_contiguous_epochs_with_horizontal_voting_ensembles)
+
+### Cyclic Learning Rate and Snapshot Ensembles
+[Go to code samples and discussion of the extensions](24_cyclic_learning_rate_and_snapshot_ensembles)
