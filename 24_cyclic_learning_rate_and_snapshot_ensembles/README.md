@@ -8,3 +8,7 @@ consists of 3 classes, 2 input features and a dataset size of 1100, 100 of which
 validation and testing. The dataset is contrived using the scikit-learn `make_blobs()` function.
 
 <img src="images/problem.png" width="420">
+
+### Increasing maximum learning rate
+Increasing the maximum learning rate to `0.1` decreased the test accuracy performances of the single models on average.
+Interestingly however, the test accuracy performances of the ensembles increased slightly.
