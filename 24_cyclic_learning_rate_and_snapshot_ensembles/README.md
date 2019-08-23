@@ -10,5 +10,6 @@ validation and testing. The dataset is contrived using the scikit-learn `make_bl
 <img src="images/problem.png" width="420">
 
 ### Increasing maximum learning rate
+
 Increasing the maximum learning rate to `0.1` decreased the test accuracy performances of the single models on average.
 Interestingly however, the test accuracy performances of the ensembles increased slightly.
