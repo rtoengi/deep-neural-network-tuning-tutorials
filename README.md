@@ -86,3 +86,6 @@ on new data.
 
 ### Cyclic Learning Rate and Snapshot Ensembles
 [Go to code samples and discussion of the extensions](24_cyclic_learning_rate_and_snapshot_ensembles)
+
+### Learn to Combine Predictions with Stacked Generalization Ensemble
+[Go to code samples and discussion of the extensions](25_learn_to_combine_predictions_with_stacked_generalization_ensemble)
