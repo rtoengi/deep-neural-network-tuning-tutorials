@@ -89,3 +89,6 @@ on new data.
 
 ### Learn to Combine Predictions with Stacked Generalization Ensemble
 [Go to code samples and discussion of the extensions](25_learn_to_combine_predictions_with_stacked_generalization_ensemble)
+
+### Combine Model Parameters with Average Model Weights Ensemble
+[Go to code samples and discussion of the extensions](26_combine_model_parameters_with_average_model_weights_ensemble)
